@@ -20,6 +20,11 @@ body{
     background: #fff;
 }
 
+h1{
+    font-size: 48px;
+    text-align: center;
+}
+
 
 
 /* HEADER */
@@ -90,6 +95,7 @@ label{
     display: none;
 }
 
+/* HEADER CHANGE */
 @media (min-width:785px) and (max-width:1100px){
     /* .logo{
         width: 80px;
@@ -110,6 +116,7 @@ label{
     } */
 }
 
+/* BURGER MENU */
 @media (max-width:784px){
     .navigation-list{
         position:fixed;
@@ -181,6 +188,13 @@ label{
     }
 }
 
+/* H1 CHANGE */
+@media(max-width:784px){
+    h1{
+        font-size: 36px;
+    }
+}
+
 
 
 /* MAIN */
@@ -222,6 +236,15 @@ h2{
     font-size: 24px;
 }
 
+.schedule-link{
+    color:#fff;
+}
+
+.schedule-link:hover{
+    color:#000;
+    text-decoration: underline;
+}
+
 .news-container{
     width: 80%;
     margin: 0 auto;
@@ -240,6 +263,18 @@ h2{
 
 .news-item{
     padding:15px;
+}
+
+.player-container{
+    /* background: rgb(37, 80, 180);
+    border-radius: 5px; */
+    width:60%;
+    margin: 0 auto;
+}
+
+.player{
+    width:100%;
+    border-radius: 10px;
 }
 
 
