@@ -3,6 +3,7 @@
 body, h1, h2, h3, h4, p, li, ul, ol,img{
     margin:0;
     padding:0;
+    color:rgb(37, 80, 180);
     font-family: "Raleway", sans-serif;
 }
 
@@ -10,14 +11,22 @@ ul,ol {
     list-style: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 body{
     /* background: #e1e1d9; */
     background: #fff;
 }
 
+
+
+/* HEADER */
 .home-page-header{
     background: #fff;
     border-bottom: 2px double rgb(37, 80, 180);
+    margin-bottom:20px;
 }
 
 .header-nav{
@@ -30,7 +39,6 @@ body{
 
 .heading-name{
     text-transform: uppercase;
-    color:rgb(37, 80, 180);
     font-weight: bold;
     font-size: 64px;
 }
@@ -48,16 +56,16 @@ body{
     text-transform: uppercase;
 }
 
-.navigation-list-item:last-child{
-    /* margin-right: 0; */
+.navigation-list-item a:hover{
+    text-decoration: underline;
+    color:#000;
 }
-
 
 .logo{
     width: 128px;
     height: 136px;
 }
-
+/* 
 .header-nav-search{
     height: 30%;
     background: rgb(37, 80, 180);
@@ -65,4 +73,94 @@ body{
     border-radius: 10px;
     border-color: #fff;
     padding: 4px;
+} */
+
+.header-nav-search{
+    background-color: #fff;
+    border: 0;
+    border-bottom: 2px solid rgb(37, 80, 180);
+}
+
+
+
+/* MAIN */
+.page-main{
+    /* width:1170px; */
+    margin: 0 auto;
+}
+
+.main-schedule{
+    margin-bottom: 60px;
+}
+
+h2{
+    font-size: 32px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.schedule-list{
+    width:60%;
+    background-color: rgb(37, 80, 180);
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(284px,1fr));
+    border-radius: 10px;
+}
+
+.schedule-item{
+    padding:10px;
+}
+
+
+.schedule-item p{
+    color:#fff;
+}
+
+.schedule-time{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+
+/* FOOTER */
+.page-footer{
+    background: rgb(37, 80, 180);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-top: 120px;
+    line-height: 12px;
+}
+
+.footer-container{
+    display:flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 0 55px;
+}
+
+.page-footer p{
+    color:#fff;
+}
+
+.copyright{
+    margin-bottom:10px;
+}
+
+.footer-navigation-list-item{
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-navigation-list-item:last-child{
+    margin-bottom: 0px;
+}
+
+.footer-navigation-list-item a{
+    color:#fff;
+}
+
+.footer-navigation-list-item a:hover{
+    text-decoration: underline;
 }
